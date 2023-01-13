@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external theke embedded besi powerful -->
+    <!-- embedded theke inline css besi powerful -->
+    <!-- embedded  -->
+    <style>
+        /* id r class er moddhe id besi priority */
+        /* class r h1 tag er moddhe class besi priority */
+        #third{
+            color:firebrick;
+        }
+        .fire{
+            color:green;
+        }
+        /* 3rd color is priority */
+        /* 2nd color will be granted */
+        h1{
+            color:salmon;
+        }
+        h1{
+            color:peru;
+            /* bang important is more important than inline */
+            color:aqua !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*4{My special heading-$} -->
+    <h1>My special heading-1</h1>
+    <h1>My special heading-2</h1>
+    <!-- inline is more important than id -->
+    <h1 style="color:black" class="fire" id="third">My special heading-3</h1>
+    <h1>My special heading-4</h1>
+</body>
+</html>
